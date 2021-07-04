@@ -7,7 +7,17 @@ export default function Home() {
       <Head>
       <title>ReactNews</title>
       </Head>
-        <h1>Hello World :v</h1>
+        <main className={styles.contentContainer}>
+          <section className={styles.hero}>
+               <span >Hey, welcome 👋😊</span>
+               <h1>news about the <span >React</span> world.</h1>
+               <p>
+                 Get access to all the publication <br />
+                 <span>for $9.90/ month</span>
+               </p>
+          </section>
+          <img src="/images/avatar.svg" alt="Girl coding" />
+        </main>
     </div>
   
   )
