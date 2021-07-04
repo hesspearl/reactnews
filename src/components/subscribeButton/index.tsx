@@ -1,6 +1,8 @@
+
 import styles from './style.module.scss'
 
-export function SubscribeButton(){
+
+export function SubscribeButton({priceId}){
 return(
     <button 
     type='button'
@@ -9,3 +11,4 @@ subscribe now
 
     </button>
 )}
+
