@@ -33,7 +33,7 @@ export default function Home({product}:HomeProps) {
   
   )
 }
-export const getServerSideProps:GetStaticProps = async()=>{
+export const getStaticProps:GetStaticProps = async()=>{
 
   const price = await stripe.prices.retrieve('price_1J9bl5KXFHy4cPKWvyyilZVl',{
       expand:['product']
@@ -51,6 +51,7 @@ return{
   props:{
       product
 
-  }
+  },
+  revalidate:60 * 60* 24// every day
 }
 }

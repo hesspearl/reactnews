@@ -11,6 +11,7 @@
   "dependencies": {
     "check-node-version": "^4.1.0",
     "next": "11.0.1",
+    "next-auth": "^3.27.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
@@ -18,6 +19,7 @@
     "stripe": "^8.160.0"
   },
   "devDependencies": {
+    "@types/next-auth": "^3.15.0",
     "@types/node": "^15.14.0",
     "@types/react": "^17.0.13",
     "eslint": "7.29.0",
